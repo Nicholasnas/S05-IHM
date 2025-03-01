@@ -8,39 +8,48 @@
 
 /* Corpo da página */
 body {
-    background: #e3f2fd; /* Azul claro de fundo */
+    background: #e3f2fd; /* Azul claro */
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 16px;
 }
 
 /* Container principal */
 .container {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     background: white;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px; /* Margem interna */
 }
 
 /* Cabeçalho */
 header {
-    background: #1565c0; /* Azul forte */
+    background: #1565c0;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 16px;
     font-size: 20px;
+    font-weight: bold;
+}
+
+/* Layout usando display flex */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espaçamento entre seções */
 }
 
 /* Seções */
 .mensagens, .aulas, .noticias {
-    padding: 15px;
+    padding: 16px;
     font-size: 14px;
-    border-bottom: 1px solid #ddd;
+    border-radius: 8px;
 }
 
-/* Estilos específicos */
+/* Diferenciação visual */
 .mensagens {
     background: #bbdefb;
     font-weight: bold;
@@ -74,16 +83,23 @@ header {
 
 /* Rodapé */
 footer {
-    background: #0d47a1; /* Azul escuro */
+    background: #0d47a1;
     color: white;
     text-align: center;
     padding: 10px;
     font-size: 12px;
+    margin-top: 16px;
 }
 
 /* Responsividade */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .container {
         width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        flex-direction: column;
     }
 }
