@@ -1,0 +1,89 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background: #e3f2fd; /* Azul claro de fundo */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Cabeçalho */
+header {
+    background: #1565c0; /* Azul forte */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+
+/* Seções */
+.mensagens, .aulas, .noticias {
+    padding: 15px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilos específicos */
+.mensagens {
+    background: #bbdefb;
+    font-weight: bold;
+}
+
+.aulas {
+    background: #e3f2fd;
+}
+
+.aulas .disciplina {
+    background: white;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.noticias {
+    background: #90caf9;
+}
+
+.noticias ul {
+    list-style: none;
+    padding: 0;
+}
+
+.noticias li {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    background: #0d47a1; /* Azul escuro */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
