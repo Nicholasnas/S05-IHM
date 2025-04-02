@@ -22,7 +22,7 @@
     .lable-prova,
     .lable-frequencia,
     .lable-nota {
-      background-color: var(--prova);
+      background-color: black;
       padding: 7px 15px;
       margin-bottom: 10px;
       border-radius: 500px;
@@ -40,6 +40,7 @@
     
     .p_lable {
       font-size: 13px;
+      background-color: black;
       color: white;
       white-space: nowrap;
       overflow: hidden;
