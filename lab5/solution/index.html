@@ -1,11 +1,14 @@
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Disciplinas</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portal de Disciplinas</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_componente.css">
+        <script src="script.js" defer></script>
+        <script src="script_componentes.js" defer ></script>
+    </head>
 
 <body>
     <div class="container">
@@ -41,7 +44,9 @@
                 <div class="disciplina">📚 Probabilidade e Processos Estocáticos - Sala 8 | 17:30</div>
                 <div class="disciplina">📚 POO com JAVA | 21:30</div>
             </section>
-
+            
+            <aulas-component id="componente"></aulas-component>
+                
             <section class="noticias">
                 <h3>Noticias: </h3>
                 <ul>
@@ -53,8 +58,8 @@
 
             <div class="carousel-container">
                 <div class="carousel">
-                     <!-- Os cards serão inseridos aqui pelo JavaScript -->
-
+                    <!-- Os cards serão inseridos aqui pelo JavaScript -->
+                    
                 </div>
                 <button id="prevBtn" class="carousel-btn">❮</button>
                 <button id="nextBtn" class="carousel-btn">❯</button>
@@ -65,8 +70,7 @@
             <small> Portal do Inatel - Copyright 2025</small>
         </footer>
     </div>
-
-    <script src="script.js"></script>
+    
 </body>
 
 </html>
